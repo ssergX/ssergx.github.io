@@ -91,6 +91,7 @@
   .approach-label{font-family:var(--mono); font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 7px}
   .approach-text{margin:0; color:var(--fg); font-size:1rem; line-height:1.55}
   .approach-text b{color:var(--accent-2); font-weight:700}
+  .approach-sub{margin:8px 0 0; color:var(--fg-dim); font-size:.92rem; line-height:1.55}
   @media (prefers-reduced-motion:reduce){ *{transition:none !important} .card:hover{transform:none} }
 </style>
 </head>
@@ -107,6 +108,12 @@
   <section class="approach" aria-label="Подход">
     <p class="approach-label">Подход</p>
     <p class="approach-text">Один из первых в России внедряю <b>Spec-Driven Development (SDD)</b>: спецификация и план первичны — код рождается из них, а не наоборот.</p>
+  </section>
+
+  <section class="approach" aria-label="MCP">
+    <p class="approach-label">MCP · Model Context Protocol</p>
+    <p class="approach-text"><b>Вывел в прод MCP-сервер с собственным OAuth 2.1 (DCR + PKCE) и изоляцией данных по тенанту.</b></p>
+    <p class="approach-sub">Построил и вывел в production MCP-сервер аналитики (WB/Ozon). Через этот слой LLM-агенты (Claude и др.) работают с бизнес-данными напрямую. Боевых реализаций с кастомным OAuth — единицы, особенно в РФ.</p>
   </section>
 
   <ul class="stack" aria-label="Технологический стек">
